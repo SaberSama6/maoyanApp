@@ -34,5 +34,11 @@ Page({
     wx.navigateTo({
       url: './serchmovie',
     })
+  },
+  moviedetails: function () {
+    console.log("jinru");
+    wx.navigateTo({
+      url: '../moviedetails/moviedetails',
+    })
   }
 })

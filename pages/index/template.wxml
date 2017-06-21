@@ -13,10 +13,10 @@
 
 <template name="hotMovie">
     <view class="moviebox">
-      <image src="img/jixieshi_03.png"></image>
+      <image src="img/jixieshi_03.png" catchtap="moviedetails"></image>
       <view class="content">
         <view class="content-text">
-          <text class="h1">机械师2：复活</text>
+          <text class="h1" catchtap="moviedetails">机械师2：复活</text>
           <text class="audience">观众 <text class="grade">9.0</text></text>
           <text>杀手森归来，生世迷解开</text>
           <text class="cinemaNum">今天112家影院放映1335场</text>

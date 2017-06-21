@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/index/waitmovie",
     "pages/index/serchmovie",
+    "pages/moviedetails/moviedetails",
     "pages/cinema/cinema",
     "pages/discover/discover",
     "pages/user/user",

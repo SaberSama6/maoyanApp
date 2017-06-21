@@ -1,0 +1,77 @@
+/* pages/moviedetails/moviedetails.wxss */
+.top{
+  height: 416rpx;
+  background-color: #261b16;
+  padding: 31rpx;
+  display: flex;
+  flex-direction: column;
+  /*flex-wrap:wrap;
+  justify-content:space-between;*/
+}
+.movieimg{
+   display: flex;
+   justify-content:space-between;
+}
+.movieimg>image{
+  width: 225rpx;
+  height: 309rpx;
+  border: 3rpx solid #fff;
+}
+.movieimg_content{
+    width:428rpx;
+    display: flex;
+    flex-direction: column;
+    color:#c7c7c2;
+}
+.cName{
+  font-size: 34rpx;
+  margin: 10rpx 0;
+  color: #fff;
+}
+.eName{
+  font-size: 20rpx;
+  color:#fff;
+}
+.garden>image{
+  width: 172rpx;
+  height: 31rpx;
+}
+.garden_content{
+  margin-left: 14rpx;
+}
+.garden{
+  font-size: 30rpx;
+  color:#fec600;
+  display: flex;
+  align-items:center;
+  margin: 19rpx 0;
+}
+.garden_num{
+  font-size: 22rpx;
+}
+.type{
+  font-size: 28rpx;
+  margin: 15rpx 0;
+}
+.region{
+  font-size: 28rpx;
+}
+.time{
+  font-size: 22rpx;
+  margin: 18rpx 0;
+}
+.btn_img{
+  width: 31rpx;
+  height: 31rpx;
+}
+.moviebtn{
+   display: flex;
+   justify-content:space-between;
+   margin-top: 28rpx;
+}
+.moviebtn>button{
+  width: 335rpx;
+  height: 72rpx;
+  background:#57504a;
+  color: #fff;
+}
