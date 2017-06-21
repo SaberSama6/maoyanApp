@@ -1,0 +1,22 @@
+<import src="template.wxml"/>
+<template is="serch" data="{{attr}}"></template>
+<template name="prevue">
+  <view class="prevue-pg" style="background-image:url('img/01.jpg')">
+    <text>鸠占鹊巢预告片</text>
+    <text>捉迷藏</text>
+  </view>
+</template>
+<view class="yaoxian">预告片推荐</view>
+<view class="yugao">
+  <template is="prevue"></template>
+  <template is="prevue"></template>
+</view>
+<view class="yaoxian">近期最受期待</view>
+<view class="want">
+  <template is="wantwacth"></template>
+  <template is="wantwacth"></template>
+  <template is="wantwacth"></template>
+  <template is="wantwacth"></template>
+</view>
+<view class="yaoxian">10月26日周三</view>
+<template is="hotMovie"></template>

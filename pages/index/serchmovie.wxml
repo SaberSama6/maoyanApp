@@ -1,0 +1,2 @@
+<import src="template.wxml"/>
+<template is="nav" data="{{...attr}}"></template>

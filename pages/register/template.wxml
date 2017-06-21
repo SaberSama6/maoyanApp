@@ -1,0 +1,27 @@
+<template name="register">
+    <view class="hint" wx:if="{{showError}}">
+       {{errorText}}
+    </view>
+    <view class="number">
+            <text class="{{phone}}">输入手机号</text>
+            <text class="{{phone}}">•••</text>
+            <text class="{{reg}}">输入验证码</text>
+            <text class="{{reg}}">•••</text>
+            <text class="{{pwd}}">设置密码</text>
+    </view>
+    <!--输入手机号-->
+    <view class="form1">
+          <text>{{label}}：</text>
+          <input type="text" placeholder="{{placeHolder}}" bindinput="getValue"/>
+    </view>
+    <!--获取验证码-->
+    <view class="from2">
+        <button class="btn" bindtap="next">{{btntext}}</button>
+      <!--阅读并同意美团协议-->
+          <view class="from_img">
+            <image src="image/get_03.png"></image>
+            <text>我已阅读并同意<text style="color:#008ff1">美团用户协议</text></text>
+          </view>    
+      </view>
+</template>
+    

@@ -1,0 +1,32 @@
+@import "template.wxss";
+
+.yaoxian{
+  padding: 0 26rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  background: #f5f5f5;
+  font-size: 27rpx;
+  font-weight: bold;
+}
+.yugao{
+  padding: 27rpx 0 27rpx 32rpx;
+  display: flex;
+}
+.prevue-pg{
+  width: 319rpx;
+  height: 178rpx;
+  margin-right: 23rpx;
+  padding: 12rpx;
+  background-size: 319rpx 178rpx;
+  display: flex;
+  flex-direction:column-reverse;
+  color: #fff;
+  font-size: 26rpx;
+}
+.prevue-pg>text{
+  margin-bottom: 10rpx;
+}
+.want{
+  padding: 33rpx 0 21rpx 32rpx;
+   display: flex;
+}

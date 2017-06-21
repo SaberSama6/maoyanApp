@@ -1,0 +1,72 @@
+/*输入手机号*/
+.number{
+    font-size: 30rpx;
+    font-weight: bold;
+    padding: .63rpx 0;
+    color: #8c8c8c;
+    background: #f5f5f5;
+    overflow: hidden;
+    width: 100%;
+    height: 115rpx;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin: auto;
+}
+.form1{
+    font-size: 32rpx;
+    font-weight: bold;
+    width: 100%;
+    height: 103rpx;
+    background: #fff;
+    border-bottom: 1px solid #e4e4e4;
+    border-top: 1px solid #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.form1>text{
+  margin-left: 30rpx;
+}
+.form1>input{
+  width: 573rpx;
+}
+/*获取验证码*/
+.from2{
+  background: #f5f5f5;
+  height: 850rpx;
+  overflow: hidden;
+}
+.from2>button{
+  width: 688rpx;
+  height: 94rpx;
+  text-align: center;
+  line-height: 94rpx;
+  background: #eed6aa;
+  color: #fff;
+  margin-top: 64rpx;
+}
+/*阅读并同意美团协议*/
+.from_img{
+   display: flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 86rpx;
+    width: 688rpx;
+}
+.from_img>image{
+    width: 44rpx;
+    height: 44rpx;
+}
+.from_img>text{
+  font-size: 28rpx;
+  color: #636363;
+}
+.font-color{
+  color: #d54441;
+}
+.hint{
+  background: #db403b;
+  text-align: center;
+  color:#fff;
+}

@@ -1,0 +1,4 @@
+<import src="template.wxml"/>
+<view class="all">
+    <template is="register" data="{{...attr}}"></template>
+</view>

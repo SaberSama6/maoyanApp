@@ -1,0 +1,9 @@
+@import "template.wxss";
+/*身体*/
+swiper{
+ height: 157rpx;
+}
+swiper-item>image{
+  width: 750rpx;
+  height: 157rpx;
+}

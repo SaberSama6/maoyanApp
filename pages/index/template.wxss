@@ -1,0 +1,154 @@
+.header{
+  height:110rpx;
+  width: 100%;
+  background:#db403b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header>text{
+  margin-left: 21rpx;
+  color: #fff;
+}
+.header>image{
+  width:42rpx;
+  height: 42rpx;
+  margin-right: 21rpx;
+}
+.tag{
+  padding:0 5rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 390rpx;
+  height: 66rpx;
+  background: #b41f19;
+  border-radius: 12rpx;
+}
+.tag text{
+    font-size: 26rpx;
+    padding: 0 39rpx;
+    border-radius: 12rpx;
+    height: 58rpx;
+    line-height: 58rpx;
+    color: #fff;
+}
+.moviebox{
+  height: 211rpx;
+  padding: 25rpx 21rpx 0 21rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.moviebox>image{
+  width:133rpx;
+  height: 186rpx;
+}
+.content{
+  width:552rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+.content-text{
+  width: 322rpx;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  font-size: 24rpx;
+  color: #595959;
+}
+.content>button{
+  width: 120rpx;
+  height: 57rpx;
+  font-size: 22rpx;
+  color: #df412b;
+  margin-right: 0;
+}
+.h1{
+  font-size: 34rpx;
+  color: #000;
+  font-weight: bold;
+  margin-top: 8rpx;
+}
+.audience{
+  color: #8c8c8c;
+  margin: 20rpx 0;
+}
+.grade{
+  font-size: 26rpx;
+  color:#efc043;
+}
+.cinemaNum{
+  margin-top: 16rpx;
+}
+.message-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  margin-left: 94rpx;
+  padding-right: 21rpx;
+}
+.title{
+  width: 64rpx;
+  height: 41rpx;
+  border: 1rpx solid #e6caa1;
+  border-radius: 10rpx;
+  color: #fa8a00;
+  font-size: 22rpx;
+  text-align: center;
+  line-height: 41rpx;
+}
+.message-content{
+  width:552rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #f1f1f1;
+  font-size: 28rpx;
+  color: #626262;
+}
+.chick{
+    background: #fff;
+    color: #d74a45 !important;
+}
+.serch-input{
+  height: 60rpx;
+  background: #db403b;
+  padding: 20rpx;
+}
+.serch-input input{
+  width: 700rpx;
+  height: 60rpx;
+  padding-left: 10rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  background: #fff;
+  font-size: 26rpx;
+}
+.wantwacth-box{
+  height: 364rpx;
+  width: 178rpx;
+  display: flex;
+  flex-direction:column;
+  margin-right: 22rpx;
+}
+.wantwacth-h1{
+  font-size: 26rpx;
+  font-weight: bold;
+  margin-bottom: 22rpx;
+}
+.wantwacth-box image{
+  width: 178rpx;
+  height: 240rpx;
+}
+.wantwacth-name{
+   font-size: 24rpx;
+  font-weight: bold;
+  margin: 20rpx 0 12rpx 0;
+}
+.wantwacth-people{
+  font-size: 22rpx;
+  color: #8d8d8d;
+}

@@ -1,0 +1,53 @@
+<template name="nav">
+  <view class="header">
+   <text>成都 ∨</text>
+   <view class="tag">
+      <text class="{{hotmovie}}" bindtap="hotmovie">热映</text>
+      <text class="{{waitmovie}}" bindtap="waitmovie">待映</text>
+      <text class="{{serchmovie}}" bindtap="serchmovie">找片</text>
+   </view>
+   <image src="img/shousuo_03.png"></image>
+</view>
+</template>
+
+
+<template name="hotMovie">
+    <view class="moviebox">
+      <image src="img/jixieshi_03.png"></image>
+      <view class="content">
+        <view class="content-text">
+          <text class="h1">机械师2：复活</text>
+          <text class="audience">观众 <text class="grade">9.0</text></text>
+          <text>杀手森归来，生世迷解开</text>
+          <text class="cinemaNum">今天112家影院放映1335场</text>
+        </view>
+        <button plain="true">购票</button>
+      </view>
+    </view>  
+</template>
+
+<template name="message">
+  <view class="message-box">
+    <text class="title">资讯</text>
+    <view class="message-content">
+      <text>“极匠九杀”斯坦森变美漫英雄</text>
+    </view>
+  </view>
+</template>
+
+<template name="serch">
+  <template is="nav" data="{{...attr}}">  
+  </template>
+  <view class="serch-input">
+    <input placeholder="找影视剧、影人、影院"/>
+  </view> 
+</template>>
+
+<template name="wantwacth">
+  <view class="wantwacth-box">
+      <text class="wantwacth-h1">16年待定</text>
+      <image src="img/tu2_03.png"></image>
+      <text class="wantwacth-name">三生三世s十里...</text>
+      <text class="wantwacth-people">210666人想看</text>
+  </view>
+</template>

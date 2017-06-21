@@ -1,0 +1,17 @@
+<import src="template.wxml"/>
+<template is="nav" data="{{...attr}}"></template>
+<view class="body">
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="width:'100%'">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style="width:'100%' height:'157rpx'"/>
+    </swiper-item>
+  </block>
+</swiper>
+   <template is="hotMovie" data="{{...attr}}"></template>
+   <template is="message" data="{{...attr}}"></template>
+   <template is="message" data="{{...attr}}"></template>
+   <template is="hotMovie" data="{{...attr}}"></template>
+   <template is="hotMovie" data="{{...attr}}"></template>
+</view>

@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/waitmovie",
+    "pages/index/serchmovie",
+    "pages/cinema/cinema",
+    "pages/discover/discover",
+    "pages/user/user",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/register/reg",  
+    "pages/register/pwd",    
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"pages/index/img/dianyin.png",
+        "selectedIconPath":"pages/index/img/dianyin-red.png",
+        "text": "电影"
+      },
+      {
+        "pagePath": "pages/cinema/cinema",
+        "iconPath": "pages/index/img/yinyuan.png",
+        "selectedIconPath": "pages/index/img/yinyuan-red.png",
+        "text": "影院"
+      },
+      {
+        "pagePath": "pages/discover/discover",
+        "iconPath": "pages/index/img/faxian.png",
+        "selectedIconPath": "pages/index/img/faxian-red.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "pages/index/img/wode.png",
+        "selectedIconPath": "pages/index/img/wode-red.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#db403b",
+    "navigationBarTitleText": "猫眼电影",
+    "navigationBarTextStyle":"white"
+  }
+}

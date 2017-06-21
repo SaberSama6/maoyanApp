@@ -1,0 +1,8 @@
+<!--pages/register/reg.wxml-->
+<import src="template.wxml"/>
+<view class="hint">
+  {{randomNum}}
+</view>
+<view class="all">
+    <template is="register" data="{{...attr}}"></template>
+</view>
