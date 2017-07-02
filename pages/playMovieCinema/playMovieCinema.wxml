@@ -1,0 +1,14 @@
+<import src="template.wxml"/>
+<view class="classname">
+   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" 
+   interval="{{interval}}" duration="{{duration}}" style="width:'100%'">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" 
+        style="width:'100%' height:'157rpx'"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<template is="template3" data="{{...playMovieCinema[index]}}" wx:for="{{playMovieCinema}}" wx:key="{{index}}" catchtap="top"></template>
+

@@ -1,4 +1,5 @@
 // pages/register/pwd.js
+var app = getApp();
 var phone="";
 Page({
 
@@ -26,10 +27,10 @@ Page({
   next: function () {
     if(/^\w{6,}$/.test(this.data.value)){
       wx.request({
-        url: 'http://127.0.0.1:3000/user/add',
+        url: app.globalData.url + '/user/add',
         data: {
-          phone: phone,
-          pwd:this.data.value
+          username: phone,
+          userpwd:this.data.value
         },
         success:function(){
           wx.reLaunch({

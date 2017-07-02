@@ -49,7 +49,7 @@ a{
 .user>input{
     width: 520rpx;
     border: none;
-    color: #cccccc;
+    color: #000;
 }
 .user2{
     border: none;

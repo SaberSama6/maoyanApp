@@ -1,0 +1,150 @@
+@import "template.wxss";
+.box{
+  height: 157rpx;
+  padding: 30rpx 0rpx 0 30rpx;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.content{
+  padding-bottom: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+}
+.left{
+  width: 463rpx;
+  display: flex;
+  flex-direction: column;
+}
+.h1{
+  font-size: 34rpx;
+  height: 34rpx;
+}
+.cinema_name{
+   display: inline-block;
+   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 260rpx;
+}
+.money{
+  font-size: 26rpx;
+  color: #f24e42;
+}
+.address{
+  color: #6c6c6c;
+  margin: 30rpx 0 16rpx 0;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 370rpx;
+}
+.tag>text{
+  padding: 5rpx;
+  border: 1px solid #3c8698;
+  margin-right: 6rpx;
+  color: #3c8698;
+}
+.right{
+  padding-right: 33rpx;
+  color: #909090;
+  font-size: 22rpx;
+  display: flex;
+  align-items: center;
+}
+
+.banner {
+  border-top: 1px solid gray;
+  display: flex;
+  font-size: 28rpx;
+  color: #6f6f6f;
+  
+}
+.banner-left image {
+  width: 36rpx;
+  height: 26rpx;
+}
+.banner-right image {
+  width: 27rpx;
+  height: 31rpx;
+}
+
+.banner-left {
+  border-right: 1px solid gray;
+  padding: 0rpx 100rpx;
+  margin: 30rpx 0;
+}
+
+.banner-right {
+  margin: 30rpx 0;
+  padding: 0rpx 100rpx;
+}
+
+.banner text {
+  margin-left: 34rpx;
+  font-size: 28rpx;
+}
+.bigimg{
+  height: 269rpx;
+  background: #110b0b;
+  position: relative;
+  padding: 25rpx;
+}
+.sanjiao{
+  width: 32rpx;
+  height: 32rpx;
+  transform:rotate(45deg);
+  background: #f5f5f5;
+  position: absolute;
+  left: 50%;
+  margin-left: -16rpx;
+  bottom: -16rpx;
+}
+.scroll-view_H{
+  display: flex;
+  white-space:nowrap;
+  width: 2000rpx;
+}
+.bigimg image{
+  width: 185rpx;
+  height: 260rpx;
+  margin-right: 40rpx;
+}
+.kong{
+  display: inline-block;
+  width: 280rpx;
+   height: 260rpx;
+}
+.line {
+  width: 750rpx;
+  height: 32rpx;
+  background-color: #f5f5f5;
+}
+
+.text {
+  width: 750rpx;
+  height: 84rpx;
+  background-color: #fff3c9;
+  line-height: 84rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text text {
+  font-size: 30rpx;
+  color: #f90;
+}
+
+.date {
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+
+.date text {
+  color: red;
+  padding: 42rpx 37rpx;
+  border-bottom: 2px solid red;
+}
+

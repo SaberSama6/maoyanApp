@@ -5,7 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    imgUrls: [
+      '../index/img/baomihua_02.png',
+      '../index/img/bigtu_02.png'
+    ],
+    autoplay: true,
+    interval: 3000,
+    duration: 1000,
+  },
+  jump:function(){
+    wx.navigateTo({
+      url: '../videohall/videohall',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   },
 
   /**

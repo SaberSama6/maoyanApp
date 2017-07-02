@@ -1,2 +1,54 @@
 <!--pages/discover/discover.wxml-->
-<text>pages/discover/discover.wxml</text>
+<import src="template.wxml"/>
+<view class="serch-input">
+    <input placeholder="找影视剧、影人、影院"/>
+</view> 
+<view class="top">
+  <view class="top_div">
+    <view class="top_img">
+      <image src="../index/img/toptu (1).png"></image>
+      <text>今日TOP10</text>
+    </view>
+    <view class="top_img">
+      <image src="../index/img/toptu (2).png"></image>
+      <text>影视快讯</text>
+    </view>
+    <view class="top_img">
+      <image src="../index/img/toptu (3).png"></image>
+      <text>好片推荐</text>
+    </view>
+    <view class="top_img">
+      <image src="../index/img/toptu (4).png"></image>
+      <text>预告片速递</text>
+    </view>
+  </view>
+  <view class="top_div">
+    <view class="top_img">
+      <image src="../index/img/toptu (5).png"></image>
+      <text>大咖来了</text>
+    </view>
+    <view class="top_img">
+      <image src="../index/img/toptu (6).png"></image>
+      <text>美图</text>
+    </view>
+    <view class="top_img">
+      <image src="../index/img/toptu (7).png"></image>
+      <text>周边商城</text>
+    </view>
+    <view class="top_img">
+      <image src="../index/img/toptu (8).png"></image>
+      <text>实时票房</text>
+    </view>
+  </view> 
+  
+</view>
+<view class="yao">
+  今天
+</view>
+<template is="template1"></template>
+<template is="template2"></template>
+<template is="template2"></template>
+<template is="template1"></template>
+<template is="template1"></template>
+<template is="template2"></template>
+<template is="template2"></template>

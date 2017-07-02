@@ -1,2 +1,3 @@
 <import src="template.wxml"/>
-<template is="nav" data="{{...attr}}"></template>
+<template is="serch" data="{{attr}}"></template>
+<template is="hotMovie" data="{{...hotMoviedata[index]}}" wx:for="{{hotMoviedata}}"></template>

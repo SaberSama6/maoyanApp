@@ -1,4 +1,4 @@
-// pages/register/register.js
+var app = getApp();
 Page({
 
   /**
@@ -19,8 +19,8 @@ Page({
     console.log(this.data.value);
     if(/^1[0-9]{10}$/.test(this.data.value)){
       wx.request({
-        url: 'http://127.0.0.1:3000/user/find', 
-        data: {phone:this.data.value},
+        url: app.globalData.url+'/user/find', 
+        data: {username:this.data.value},
         success: function (res) {
           if (res.data.length){
             var attr = this.data.attr;

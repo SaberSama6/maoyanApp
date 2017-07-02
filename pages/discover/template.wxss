@@ -1,0 +1,54 @@
+.box{
+  height: 340rpx;
+  padding: 30rpx 30rpx 0 30rpx;
+}
+.h1{
+  font-size: 34rpx;
+  font-weight: 500;
+}
+.img{
+  display: flex;
+  justify-content: space-between;
+}
+.img>image{
+  width: 223rpx;
+  height: 167rpx;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  font-size: 24rpx;
+  color: #929292;
+  padding: 29rpx 0;
+}
+.tiele_num_box{
+  display: flex;
+  justify-content: space-between;
+  width: 175rpx;
+}
+.tiele_num>image{
+  width: 33rpx;
+  height: 21rpx;
+}
+.tiele_num2>image{
+  width: 27rpx;
+  height: 24rpx;
+}
+.box2{
+  height: 229rpx;
+  padding:0 30rpx;
+}
+.content{
+  padding: 30rpx 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+.content>image{
+  width: 222rpx;
+  height: 167rpx;
+}
+.content_right{
+  width: 439rpx;
+}

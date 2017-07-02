@@ -1,0 +1,54 @@
+<import src="template.wxml"/>
+<view class="box" catchtap="jump">
+    <view class="content">
+      <view class="left">
+        <view class="h1">
+          <text class="cinema_name">{{cinema.cinema}}</text>
+          <text class="money"> 34.9元起</text>
+        </view>
+          <text class="address">{{cinema.address}}</text>
+          <view class="tag">
+            <text>改签</text>
+            <text>取票机</text>
+            <text>儿童优惠</text>
+            <text>可停车</text>
+            <text>WIFI</text>
+          </view>
+      </view>
+      <view class="right">></view>
+    </view> 
+  </view> 
+<view class="banner">
+  <view class="banner-left">
+  <image src="../index/img/ka.png"></image>
+  <text>折扣卡</text>
+  </view>
+  <view class="banner-right">
+   <image src="../index/img/baomihua.png" alt=""/>
+   <text>观影套餐</text>
+  </view>
+</view>
+<view class="bigimg">
+  <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+      <view class="kong"></view>
+      <image src="../index/img/jixieshi.png" class="direct_img"></image>
+      <image src="../index/img/jixieshi.png"></image>
+      <image src="../index/img/jixieshi.png"></image>
+      <image src="../index/img/jixieshi.png"></image>
+      <image src="../index/img/jixieshi.png"></image>
+      <image src="../index/img/jixieshi.png"></image>
+       <view class="kong"></view>
+  </scroll-view>
+  <view class="sanjiao"></view>
+</view>
+<view class="line">
+</view>
+<view class="text">
+  <text>购票享低价，首单高更优惠，还送10元礼包</text>
+  <text>¥33开卡></text>
+</view>
+<view class="date">
+  <text>今天10月21日</text>
+</view>
+<template is="bay" data="{{...videohall[index]}}" wx:for="{{videohall}}"></template>
+

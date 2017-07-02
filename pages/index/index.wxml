@@ -9,9 +9,7 @@
     </swiper-item>
   </block>
 </swiper>
-   <template is="hotMovie" data="{{...attr}}"></template>
    <template is="message" data="{{...attr}}"></template>
    <template is="message" data="{{...attr}}"></template>
-   <template is="hotMovie" data="{{...attr}}"></template>
-   <template is="hotMovie" data="{{...attr}}"></template>
+   <template is="hotMovie" data="{{...hotMoviedata[index]}}" wx:for="{{hotMoviedata}}"></template>
 </view>

@@ -1,15 +1,44 @@
-// pages/login/login.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    username:"",
+    password:""
   },
   next: function () {
     wx.navigateTo({
       url: '../register/register',
+    })
+  },
+  getname:function(e){
+    this.setData({
+      username: e.detail.value
+    })
+  },
+  getpwd:function(e){
+    this.setData({
+      password: e.detail.value
+    })
+  },
+  login:function(){
+    wx.request({
+      url: app.globalData.url + '/user/find',
+      data: {
+        username: this.data.username,
+        userpwd: this.data.password
+      },
+      success: function () {
+        wx.setStorage({
+          key: 'username',
+          data: 'this.data.username',
+        });
+        wx.reLaunch({
+          url: '../index/index',
+        })
+      }
     })
   },
   /**

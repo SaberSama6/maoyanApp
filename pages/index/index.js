@@ -1,6 +1,6 @@
 //index.js
 //获取应用实例
-var app = getApp()
+var app = getApp();
 Page({
   data: {
     imgUrls: [
@@ -12,8 +12,28 @@ Page({
     interval: 3000,
     duration: 1000,
     attr:{
-      hotmovie:"chick"
-    }
+      hotmovie:"chick",
+    },
+    hotMoviedata:[],
+    hotMovieName:"",
+  },
+  onLoad: function (options) {
+      wx.request({
+        url: app.globalData.url+'/hotMovie/find',
+        data: {},
+        success: function (data) {
+          console.log(data.data);
+          var hotdata = data.data;
+          for (let i = 0; i < hotdata.length;i++){
+            let img = hotdata[i].coverImg[0];
+            let imgstr=img.split("\\")[1];
+            hotdata[i].coverImg[0] = imgstr
+          }
+          this.setData({
+            hotMoviedata: hotdata
+          }); 
+        }.bind(this)
+      })
   },
   changeIndicatorDots: function (e) {
     this.setData({
@@ -35,10 +55,16 @@ Page({
       url: './serchmovie',
     })
   },
-  moviedetails: function () {
-    console.log("jinru");
+  moviedetails: function (e) {
+    let name = e.target.dataset.name
     wx.navigateTo({
-      url: '../moviedetails/moviedetails',
+      url: '../moviedetails/moviedetails?name=' +name,
+    })
+  },
+  buyTickets:function(e){
+    let name = e.target.dataset.name
+    wx.navigateTo({
+      url: '../playMovieCinema/playMovieCinema?name=' + name,
     })
   }
 })

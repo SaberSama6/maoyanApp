@@ -1,0 +1,25 @@
+<template name="template3">
+  <view class="box" catchtap="jump">
+    <view class="content">
+      <view class="left">
+        <view class="h1">
+          <text>太平洋影城（新城市店）</text>
+          <text class="money">14.9元起</text>
+        </view>
+          <text class="address">青羊区西大街1号新城市广场A栋2楼</text>
+          <view class="tag">
+            <text class="grey">座</text>
+            <text class="grey">团</text>
+            <text class="blue">改签</text>
+            <text class="blue">小吃</text>
+            <text class="origin">折扣卡</text>
+          </view>
+          <view class="advert">
+            <text class="case">惠</text>
+            <text class="advert_content"> 侠探杰克：永不回头等2部影片特惠</text>
+          </view>
+      </view>
+      <view class="right">1.4km</view>
+    </view> 
+  </view> 
+</template>

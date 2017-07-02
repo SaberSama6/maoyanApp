@@ -1,4 +1,4 @@
-// pages/index/serchmovie.js
+var app = getApp();
 Page({
 
   /**
@@ -7,7 +7,8 @@ Page({
   data: {
     attr: {
       serchmovie: "chick"
-    }
+    },
+    hotMoviedata:[]
   },
   hotmovie: function () {
     wx.reLaunch({
@@ -17,6 +18,38 @@ Page({
   waitmovie: function () {
     wx.reLaunch({
       url: './waitmovie',
+    })
+  },
+  serch:function(e){
+    console.log(e.detail.value);
+    wx.request({
+      url: app.globalData.url + '/filmInfo/find',
+      data: {
+        cName: e.detail.value
+      },
+      success: function (data) {
+        var hotdata = data.data;
+        for (let i = 0; i < hotdata.length; i++) {
+          let img = hotdata[i].coverImg[0];
+          let imgstr = img.split("\\")[1];
+          hotdata[i].coverImg[0] = imgstr
+        }
+        this.setData({
+          hotMoviedata: hotdata
+        });
+      }.bind(this)
+    })
+  },
+  moviedetails: function (e) {
+    let name = e.target.dataset.name
+    wx.navigateTo({
+      url: '../moviedetails/moviedetails?name=' + name,
+    })
+  },
+  buyTickets: function (e) {
+    let name = e.target.dataset.name
+    wx.navigateTo({
+      url: '../playMovieCinema/playMovieCinema?name=' + name,
     })
   },
 

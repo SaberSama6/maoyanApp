@@ -1,0 +1,78 @@
+<view class="box">
+  <view class="content">
+      <view class="left">
+        <view class="h1">
+          <text>{{cinemaname}}</text>
+        </view>
+          <text class="address">今天10月21日 17:30 国语3D</text>
+      </view>
+      <view class="right">换一场</view>
+  </view> 
+</view> 
+
+  <!--选座图片-->
+  <view class="img">
+    <view class="">
+      <image src="../index/img/xuanzuo (2).png"></image>
+      <text>可选</text>
+    </view>
+    <view class="">
+      <image src="../index/img/xuanzuo (3).png"></image>
+      <text>已售</text>
+    </view>
+    <view class="">
+      <image src="../index/img/xuanzuo (4).png"></image>
+      <text>已选</text>
+    </view>
+    <view class="">
+      <image src="../index/img/xuanzuo (1).png" class=" loveseat"></image>
+      <text>情侣座</text>
+    </view>
+  </view>
+
+  <view class="monitor">
+    <text>{{videohallname}}荧幕</text>
+    <view class=" serial">
+      <text>1</text>
+      <text>2</text>
+      <text>3</text>
+      <text>4</text>
+      <text class="center">5</text>
+      <text>6</text>
+      <text>7</text>
+      <text>8</text>
+      <text>9</text>
+      <text>10</text>
+      <text>11</text>
+    </view>
+    <view class="seats">
+        <view wx:for="{{seats}}" wx:for-index="i" class="row">
+        <block wx:for="{{item}}" wx:for-index="j" wx:for-item="seat">
+        {{seat[j]}}
+          <label wx:if="{{seat == 1}}" class="seat_null"></label>
+          <label wx:if="{{seat == 0}}" class="seat_optional" data-id="seat_{{i}}_{{j}}" bindtap="change"></label>
+          <label wx:if="{{seat == 2}}" class="seat_selected" data-id="seat_{{i}}_{{j}}" bindtap="change"></label>
+          <label wx:if="{{seat == 3}}" class="seat_noselected" data-id="seat_{{i}}_{{j}}"></label>
+        </block>
+      </view>
+    </view>
+  </view>
+
+
+<!--底部-->
+
+<view class="recommend">
+    <text class="h4">推荐座位</text>
+    <view class="people">
+      <text class="{{check_1}}">1人</text> 
+      <text class="{{check_2}}">2人</text> 
+      <text class="{{check_3}}">3人</text> 
+      <text class="{{check_4}}">4人</text> 
+      <text class="{{check_5}}">5人</text>
+    </view>   
+</view>
+    <!--尾部-->
+<view class="fotter">
+    <text>一次最多选择5个座位</text>
+    <button class="{{buy_check}}" catchtap="{{affirm}}">{{buy_checktext}}</button>
+</view>

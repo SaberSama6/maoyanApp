@@ -1,0 +1,76 @@
+.bay {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 162rpx;
+  font-size: 32rpx;
+  border-bottom: 1px solid lightgray;
+}
+
+.bay-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 50rpx;
+}
+
+.bay-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 50rpx;
+}
+
+.bay-money {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 50rpx;
+}
+
+.bay-seat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bay-time text:first-child {
+  font-size: 40rpx;
+  font-weight: 600rpx;
+}
+
+.bay-time text:last-child {
+  font-size: 28rpx;
+  color: grey;
+  font-weight: 700rpx;
+}
+
+.bay-time text:first-child {
+  font-size: 40rpx;
+  font-weight: 600rpx;
+}
+
+.bay-home text:last-child {
+  font-size: 28rpx;
+  color: grey;
+  font-weight: 700rpx;
+}
+
+.bay-money text:first-child {
+  font-size: 40rpx;
+  font-weight: 700rpx;
+  color: orangered;
+}
+
+.bay-money text:last-child {
+  font-size: 28rpx;
+  color: #fd9700;
+  font-weight: 700rpx;
+}
+
+.bay-seat text {
+  padding: 16rpx;
+  color: red;
+  border-radius: 5rpx;
+  border: 1px solid red;
+}

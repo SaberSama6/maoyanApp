@@ -19,6 +19,26 @@ Page({
       url: './serchmovie',
     })
   },
+  serch: function (e) {
+    console.log(e.detail.value);
+    wx.request({
+      url: app.globalData.url + '/filmInfo/find',
+      data: {
+        cName: e.detail.value
+      },
+      success: function (data) {
+        var hotdata = data.data;
+        for (let i = 0; i < hotdata.length; i++) {
+          let img = hotdata[i].coverImg[0];
+          let imgstr = img.split("\\")[1];
+          hotdata[i].coverImg[0] = imgstr
+        }
+        this.setData({
+          hotMoviedata: hotdata
+        });
+      }.bind(this)
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

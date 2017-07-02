@@ -1,0 +1,48 @@
+<template name="template1">
+  <view class="box">
+    <text class="h1">电影扫地僧：心理研究者谈《惊破天》犯罪心理学套路</text>
+    <view class="img">
+      <image src="../index/img/saodi (1).png"></image>
+      <image src="../index/img/saodi (2).png"></image>
+      <image src="../index/img/saodi (3).png"></image>
+    </view>
+    <view class="title">
+      <view class="">电影扫地僧</view>
+      <view class="tiele_num_box">
+        <view class="tiele_num">
+          <image src="../index/img/ey.png"></image>
+          <text> 1875</text>
+        </view>
+        <view class="tiele_num tiele_num2">
+          <image src="../index/img/news.png"></image>
+          <text> 8</text>
+        </view>  
+      </view>
+    </view>
+  </view> 
+</template>
+
+
+<template name="template2">
+  <view class="box2">
+    <view class="content">
+      <image src="../index/img/wangfei.png"></image>
+      <view class="content_right">
+        <text class="h1">王菲有望献综艺节目首秀，节目记录演唱会诞生过程</text>
+        <view class="title">
+          <view class="">影讯快报</view>
+            <view class="tiele_num_box">
+              <view class="tiele_num">
+                <image src="../index/img/ey.png"></image>
+                <text> 55</text>
+              </view>
+              <view class="tiele_num tiele_num2">
+                <image src="../index/img/news.png"></image>
+                <text> 1</text>
+              </view>  
+            </view>
+          </view>
+      </view>
+    </view>
+  </view> 
+</template>

@@ -1,18 +1,18 @@
 <!--pages/moviedetails/moviedetails.wxml-->
 <view class="top">
   <view class="movieimg">
-    <image src="../index/img/jixieshi_03.png"></image>
+    <image src="http://192.168.14.65:3000/images/{{moviedetailsData.coverImg[0]}}"></image>
     <view class="movieimg_content">
-      <text class="cName">机械师2：复活</text>
-      <text class="eName">Mechanic:Resurrection</text>
+      <text class="cName">{{moviedetailsData.cName}}</text>
+      <text class="eName">{{moviedetailsData.eName}}</text>
       <view class="garden">
         <image src="../index/img/xingxing.png"></image>
-        <text class="garden_content">9.0</text>
+        <text class="garden_content">{{moviedetailsData.score}}</text>
       </view>
       <text class="garden_num">(7092评分)</text>
-      <text class="type">动作 犯罪 3D</text>
-      <text class="region">美国 法国/97分钟</text>
-      <text class="time">2016-10-21大陆上映 ></text>
+      <text class="type">{{moviedetailsData.type}} 3D</text>
+      <text class="region">{{moviedetailsData.area}}/{{moviedetailsData.area}}</text>
+      <text class="time">{{moviedetailsData.release}}{{moviedetailsData.release_area}} ></text>
     </view>
   </view>
   <view class="moviebtn">
@@ -20,3 +20,36 @@
     <button><image src="../index/img/kongxin.png" class="btn_img"></image> 评分</button>
   </view>
 </view>
+<view class="body">
+  <view class="{{hidden}}">
+    <text>{{moviedetailsData.synopsis}}</text>
+  </view>
+  <view class="body_btn">
+     <button catchtap="more">{{btn}}</button>
+  </view>
+  <view class="yao"></view>
+  <view class="duty">
+    <view class="duty_name">
+      <view class="classname">
+        <text class="direct">导演</text>
+        <text>演员</text>
+      </view>
+      <text class="duty_all">全部></text>
+    </view>
+    <view class="duty_img" > 
+        <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+          <image src="http://192.168.14.65:3000/images/{{moviedetailsData.directorImg[0]}}"></image>
+          <image src="http://192.168.14.65:3000/images/{{moviedetailsData.actorsImg[index]}}" wx:for="{{moviedetailsData.actorsImg}}"></image>
+        </scroll-view>    
+    </view>
+  </view>
+</view>
+<view class="buy">
+   <button catchtap="buyTickets">立即购票</button>
+</view>
+
+
+
+
+
+

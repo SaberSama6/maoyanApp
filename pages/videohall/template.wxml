@@ -1,0 +1,21 @@
+<template name="bay">
+  <navigator url="../seat/seat?name={{name}}&index={{index}}&videohallindex={{videohallIndex}}&timeindex={{timeIndex}}">
+    <view class="bay">
+      <view class="bay-time">
+        <text>{{begin}}</text>
+        <text>{{end}}散场</text>
+      </view>
+      <view class="bay-home">
+        <text>国语3D</text>
+        <text>{{videohallname}}</text>
+      </view>
+      <view class="bay-money">
+        <text>{{money}}</text>
+        <text>折扣卡：37元</text>
+      </view>
+      <view class="bay-seat">
+        <text>选座购票</text>
+      </view>
+    </view>
+  </navigator>
+</template>
